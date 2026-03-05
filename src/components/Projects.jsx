@@ -13,7 +13,7 @@ export default function Projects() {
     {
       title: "🎬 Netflix Content Analysis Dashboard",
       summary:
-        "This dashboard explores Netflix’s content library by type, rating, release year, country, and seasons. Helps understand content trends, audience preferences, and growth patterns across regions and years.",
+        "This dashboard explores Netflix's content library by type, rating, release year, country, and seasons. Helps understand content trends, audience preferences, and growth patterns across regions and years.",
       tools: ["Power BI", "Excel", "SQL"],
       previewImage: "/dashboards/dashboard_images/netflix.jpg",
       dashboardImage: "/dashboards/image2.jpeg",
@@ -24,7 +24,7 @@ export default function Projects() {
         "A data-driven dashboard visualizing job trends, demand by location, and in-demand roles on LinkedIn. Offers insights into hiring patterns, application volume, and trending job profiles.",
       tools: ["Power BI", "Excel", "SQL"],
       previewImage: "/dashboards/dashboard_images/linkedin.jpg",
-      dashboardImage: "/dashboards/image3.jpeg",  
+      dashboardImage: "/dashboards/image3.jpeg",
     },
     {
       title: "🎵 Spotify Music Analytics Dashboard",
@@ -40,8 +40,8 @@ export default function Projects() {
         "Analyzes YouTube data to uncover trends in content categories, viewer sentiment, and creator growth. Highlights top creators, most viewed categories, and audience engagement metrics.",
       tools: ["Power BI", "Excel", "SQL"],
       previewImage: "/dashboards/dashboard_images/youtube.jpg",
-      dashboardImage: "/dashboards/image4.jpeg",  
-    }
+      dashboardImage: "/dashboards/image4.jpeg",
+    },
   ];
 
   /* ---------------- ANALYSIS ---------------- */
@@ -53,7 +53,7 @@ export default function Projects() {
       tech: ["Python", "SQL", "Pandas", "Matplotlib"],
       github: "#https://github.com/Karthikallu1811/Coffee_sales.git",
       live: "dashboards/dashboard_images/coffee_code.png",
-    }
+    },
   ];
 
   /* ---------------- DESIGNS ---------------- */
@@ -134,7 +134,7 @@ export default function Projects() {
         "/images/designs/GAAC-5/imgpos6.jpeg",
         "/images/designs/GAAC-5/imgpos7.jpeg",
       ],
-    }
+    },
   ];
 
   /* ----------- SLIDER CONTROLS (NO LOOP) ----------- */
@@ -211,7 +211,7 @@ export default function Projects() {
             rel="noopener noreferrer"
             className="btn outline"
           >
-              View More Dashboards →
+            View More Dashboards →
           </a>
         </div>
 
@@ -266,7 +266,7 @@ export default function Projects() {
             rel="noopener noreferrer"
             className="btn outline"
           >
-              Explore More Code →
+            Explore More Code →
           </a>
         </div>
 
@@ -297,18 +297,20 @@ export default function Projects() {
           </div>
         </div>
 
-      </div>
-
-      <div className="section-footer">
-        <a
-          href="https://github.com/Karthikallu1811/Designs.git"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn outline"
-        >
+        {/* ✅ FIXED: section-footer is now INSIDE projects-container */}
+        <div className="section-footer">
+          <a
+            href="https://github.com/Karthikallu1811/Designs.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn outline"
+          >
             See Full Design Archive →
-        </a>
+          </a>
+        </div>
+
       </div>
+      {/* END projects-container */}
 
       {/* DESIGN MODAL */}
       <AnimatePresence>
@@ -334,7 +336,6 @@ export default function Projects() {
                 </div>
               ) : (
                 <div className="slider-container">
-
                   <button
                     className="slider-btn left"
                     onClick={goPrev}
@@ -358,13 +359,10 @@ export default function Projects() {
                   <button
                     className="slider-btn right"
                     onClick={goNext}
-                    disabled={
-                      currentIndex === selectedDesign.images.length - 1
-                    }
+                    disabled={currentIndex === selectedDesign.images.length - 1}
                   >
                     ›
                   </button>
-
                 </div>
               )}
             </motion.div>
@@ -399,7 +397,7 @@ export default function Projects() {
           </motion.div>
         )}
       </AnimatePresence>
-      
+
       {/* CODE MODAL */}
       <AnimatePresence>
         {selectedCodeImage && (
@@ -427,7 +425,6 @@ export default function Projects() {
           </motion.div>
         )}
       </AnimatePresence>
-
     </section>
   );
 }
