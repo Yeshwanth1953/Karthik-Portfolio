@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import "./App.css";
-
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
 import Home from "./components/Home";
 import Projects from "./components/Projects";
+import Certificates from "./components/Certificates";
+import Achievements from "./components/Achievements";
+import Contact from "./components/Contact";
 
 function AnimatedRoutes() {
   const location = useLocation();
-
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -27,6 +27,9 @@ function AnimatedRoutes() {
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/certificates" element={<Certificates />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </motion.div>
     </AnimatePresence>
@@ -38,11 +41,9 @@ function App() {
     <BrowserRouter>
       <div className="app-layout">
         <Navbar />
-
         <main className="app-content">
           <AnimatedRoutes />
         </main>
-
         <Footer />
       </div>
     </BrowserRouter>

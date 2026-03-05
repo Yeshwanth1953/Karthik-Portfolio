@@ -38,6 +38,9 @@ export default function Footer() {
           <h4>Quick Links</h4>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/certificates">Certificates</NavLink>
+          <NavLink to="/achievements">Achievements</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </div>
 
         <div className="footer-contact">
