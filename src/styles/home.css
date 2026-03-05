@@ -1,0 +1,392 @@
+/* =========================
+   HERO LAYOUT
+========================= */
+
+.home-hero {
+  min-height: calc(100vh - 90px);
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  align-items: center;
+  padding: 0 10vw;
+  padding-top: 50px;
+}
+
+/* LEFT */
+.hero-left {
+  max-width: 640px;
+}
+
+.hero-tag {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.hero-title span {
+  color: var(--accent);
+}
+
+.hero-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin-bottom: 34px;
+}
+
+.section-title {
+  font-size: 3.8rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: var(--accent);
+}
+
+
+/* BUTTONS */
+.hero-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: var(--bg-main);
+}
+
+.btn.secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn.primary:hover {
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.35);
+}
+
+.btn.secondary:hover {
+  background: rgba(34, 197, 94, 0.08);
+}
+
+/* IMAGE */
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.image-box {
+  width: 420px;
+  height: 450px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   SKILLS SECTION (STRUCTURED)
+========================= */
+
+.skills-section {
+  padding: 140px 10vw;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-top: 14px;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.skill-block {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.skill-info h3 {
+  font-size: 1.6rem;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.skill-info p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Skill list */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skill-list span {
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: var(--card-bg);
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.skill-list span:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.2);
+}
+
+/* =========================
+   NEW SKILLS STRUCTURE
+========================= */
+
+.skills-header {
+  max-width: 760px;
+  margin-bottom: 90px;
+}
+
+.skills-subtitle {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+.skills-block {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.skill-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+  color: var(--accent);
+}
+
+.skill-info p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skill-tags span {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: rgba(255, 255, 255, 0.03);
+  transition: 0.3s ease;
+}
+
+.skill-tags span:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+
+
+/* =========================
+   ACHIEVEMENTS SECTION
+========================= */
+
+
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.achievement-card {
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  padding: 40px;
+  border-radius: 18px;
+}
+
+.achievement-card h3 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+/* =========================
+   PROFESSIONAL HIGHLIGHTS
+========================= */
+
+.achievements-section {
+  padding: 140px 10vw;
+}
+
+.achievements-header {
+  max-width: 750px;
+  margin-bottom: 90px;
+}
+
+.achievements-subtitle {
+  margin-top: 20px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* =========================
+   CENTERED TIMELINE
+========================= */
+
+.timeline {
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Center vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: var(--accent);
+}
+
+/* Each item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+/* Left side */
+.timeline-item:nth-child(odd) {
+  align-self: flex-start;
+  text-align: right;
+}
+
+/* Right side */
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+  text-align: left;
+}
+
+/* Dot attached to line */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 18px;
+  height: 18px;
+  background: var(--accent);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-item::before {
+  box-shadow: 0 0 15px var(--accent);
+}
+
+
+/* Position dot exactly on line */
+.timeline-item:nth-child(odd)::before {
+  right: -9px;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -9px;
+}
+
+/* Text styling */
+.timeline-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.timeline-item p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .skills-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    text-align: left !important;
+  }
+
+  .timeline-item::before {
+    left: 12px !important;
+    right: auto;
+  }
+}
+
