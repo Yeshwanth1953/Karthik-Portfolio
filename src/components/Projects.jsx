@@ -51,7 +51,7 @@ export default function Projects() {
       description:
         "Analyzed coffee sales data to identify trends and seasonal patterns. Used Python for data cleaning and visualization, and SQL for querying the database. The project provided insights into customer preferences and sales performance.",
       tech: ["Python", "SQL", "Pandas", "Matplotlib"],
-      github: "#https://github.com/Karthikallu1811/Coffee_sales.git",
+      github: "https://github.com/Karthikallu1811/Coffee_sales.git",
       live: "dashboards/dashboard_images/coffee_code.png",
     },
   ];

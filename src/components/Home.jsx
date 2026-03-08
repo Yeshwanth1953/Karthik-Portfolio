@@ -74,7 +74,7 @@ export default function Home() {
             <a href="/Certificates/karthik_resume.pdf" className="btn primary" target="_blank" rel="noopener noreferrer">
               Download Resume
             </a>
-            <a href="/projects" className="btn secondary">
+            <a href="/Projects" className="btn secondary">
               See My Work →
             </a>
           </motion.div>
