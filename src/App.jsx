@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
+import ParticleCanvas from "./components/ParticleCanvas";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -25,11 +26,11 @@ function AnimatedRoutes() {
         style={{ width: "100%" }}
       >
         <Routes location={location}>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/"             element={<Home />} />
+          <Route path="/projects"     element={<Projects />} />
           <Route path="/certificates" element={<Certificates />} />
           <Route path="/achievements" element={<Achievements />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact"      element={<Contact />} />
         </Routes>
       </motion.div>
     </AnimatePresence>
@@ -40,6 +41,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app-layout">
+
+        {/* 🌐 Global particle animation — behind everything, all pages */}
+        <ParticleCanvas />
+
         <Navbar />
         <main className="app-content">
           <AnimatedRoutes />

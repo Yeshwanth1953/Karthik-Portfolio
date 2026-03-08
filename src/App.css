@@ -1,17 +1,13 @@
 /* =========================
    GLOBAL COLOR PALETTE
 ========================= */
-
 :root {
   --bg-main: #020617;
   --bg-secondary: #020b1a;
-
   --accent: #22c55e;
   --accent-soft: #16a34a;
-
   --text-main: #e5e7eb;
   --text-muted: #94a3b8;
-
   --card-bg: rgba(255,255,255,0.03);
   --border-soft: rgba(34,197,94,0.25);
 }
@@ -19,17 +15,14 @@
 /* =========================
    GLOBAL BASE
 ========================= */
-
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-
   background: radial-gradient(
     circle at top left,
     #0b1f2a,
     var(--bg-main) 70%
   );
-
   color: var(--text-main);
 }
 
@@ -42,27 +35,33 @@ p {
   line-height: 1.6;
 }
 
-/* App.css */
+/* =========================
+   APP LAYOUT
+========================= */
+
 .app-layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  overflow-x: hidden; /* This prevents the horizontal scroll you see in the image */
+  overflow-x: hidden;
+
+  /* ✅ All content sits above the fixed ParticleCanvas (z-index: 0) */
+  position: relative;
+  z-index: 1;
 }
 
 .app-content {
-  flex: 1; /* This pushes the footer to the bottom of the page */
+  flex: 1;
   width: 100%;
 }
 
 html, body {
   width: 100%;
-  overflow-x: hidden; /* This kills the horizontal scroll */
-  background-color: #020617; /* Match your footer/theme color */
+  overflow-x: hidden;
+  background-color: #020617;
 }
 
-/* App.css */
 * {
   margin: 0;
   padding: 0;

@@ -94,7 +94,6 @@ export default function Home() {
 
       {/* ===================== SKILLS ===================== */}
       <section className="skills-section">
-
         <RevealSection>
           <div className="skills-header">
             <p className="skills-eyebrow">WHAT I WORK WITH</p>
@@ -128,7 +127,6 @@ export default function Home() {
             </RevealSection>
           ))}
         </div>
-
       </section>
 
       {/* ===================== SKILL POPUP ===================== */}
@@ -151,15 +149,12 @@ export default function Home() {
             >
               <button className="skill-modal__close" onClick={() => setActiveSkill(null)}>✕</button>
               <div className="skill-modal__glow" />
-
               <div className="skill-modal__header">
                 <span className="skill-modal__icon">{activeSkill.icon}</span>
                 <h3 className="skill-modal__title">{activeSkill.category}</h3>
               </div>
-
               <p className="skill-modal__desc">{activeSkill.desc}</p>
               <div className="skill-modal__divider" />
-
               <div className="skill-modal__tags">
                 {activeSkill.tags.map((tag, idx) => (
                   <motion.span
