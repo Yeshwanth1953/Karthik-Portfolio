@@ -23,9 +23,7 @@
    HERO
 ========================= */
 
-.cert-hero {
-  margin-bottom: 60px;
-}
+.cert-hero { margin-bottom: 60px; }
 
 .cert-eyebrow {
   font-size: 0.7rem;
@@ -43,9 +41,7 @@
   color: var(--text-main);
 }
 
-.cert-title span {
-  color: var(--accent);
-}
+.cert-title span { color: var(--accent); }
 
 .cert-desc {
   color: var(--text-muted);
@@ -62,13 +58,10 @@
 .cert-stats {
   display: flex;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
-.cert-stat {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
+.cert-stat { display: flex; flex-direction: column; gap: 4px; }
 
 .cert-stat__value {
   font-size: 2.2rem;
@@ -161,7 +154,6 @@
     0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
-/* Glow */
 .cert-card__glow {
   position: absolute;
   top: -60px;
@@ -175,11 +167,8 @@
   transition: opacity 0.4s ease;
 }
 
-.cert-card:hover .cert-card__glow {
-  opacity: 1;
-}
+.cert-card:hover .cert-card__glow { opacity: 1; }
 
-/* Category badge */
 .cert-card__category {
   display: inline-flex;
   width: fit-content;
@@ -194,13 +183,8 @@
   margin-bottom: 6px;
 }
 
-/* Icon */
-.cert-card__icon {
-  font-size: 2rem;
-  line-height: 1;
-}
+.cert-card__icon { font-size: 2rem; line-height: 1; }
 
-/* Title */
 .cert-card__title {
   font-size: 1.15rem;
   font-weight: 700;
@@ -209,7 +193,6 @@
   line-height: 1.4;
 }
 
-/* Issuer */
 .cert-card__issuer {
   font-size: 0.82rem;
   color: var(--accent);
@@ -217,7 +200,6 @@
   opacity: 0.8;
 }
 
-/* Desc */
 .cert-card__desc {
   font-size: 0.87rem;
   color: var(--text-muted);
@@ -226,11 +208,7 @@
   flex: 1;
 }
 
-/* Footer */
-.cert-card__footer {
-  margin-top: auto;
-  padding-top: 16px;
-}
+.cert-card__footer { margin-top: auto; padding-top: 16px; }
 
 .cert-card__view {
   font-size: 0.82rem;
@@ -239,11 +217,8 @@
   transition: opacity 0.25s ease;
 }
 
-.cert-card:hover .cert-card__view {
-  opacity: 1;
-}
+.cert-card:hover .cert-card__view { opacity: 1; }
 
-/* Bottom bar */
 .cert-card__bar {
   position: absolute;
   bottom: 0;
@@ -254,9 +229,7 @@
   transition: width 0.5s ease;
 }
 
-.cert-card:hover .cert-card__bar {
-  width: 100%;
-}
+.cert-card:hover .cert-card__bar { width: 100%; }
 
 /* =========================
    MODAL
@@ -271,6 +244,7 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  padding: 20px;
 }
 
 .cert-modal {
@@ -329,11 +303,7 @@
   margin-bottom: 22px;
 }
 
-.cert-modal__icon {
-  font-size: 2.6rem;
-  line-height: 1;
-  flex-shrink: 0;
-}
+.cert-modal__icon { font-size: 2.6rem; line-height: 1; flex-shrink: 0; }
 
 .cert-modal__category {
   display: inline-block;
@@ -396,33 +366,60 @@
 }
 
 /* =========================
-   MOBILE
+   TABLET  (481px – 900px)
 ========================= */
 
 @media (max-width: 900px) {
-  .cert-page {
-    padding: 100px 6vw 120px;
-  }
+  .cert-page { padding: 100px 5vw 120px; }
 
-  .cert-title {
-    font-size: 2.4rem;
-  }
+  .cert-title  { font-size: 2.6rem; }
+  .cert-desc   { font-size: 0.95rem; }
 
-  .cert-grid {
-    grid-template-columns: 1fr;
-  }
+  .cert-stats  { gap: 28px; }
+  .cert-stat__value { font-size: 1.9rem; }
 
-  .cert-stats {
-    gap: 30px;
-  }
+  .cert-filters { gap: 8px; margin-bottom: 40px; }
+  .cert-filter-btn { padding: 8px 18px; font-size: 0.82rem; }
 
-  .cert-modal {
-    padding: 36px 28px;
-  }
+  .cert-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+  .cert-card { padding: 28px 24px 34px; }
+  .cert-card__title { font-size: 1.05rem; }
+
+  .cert-modal { padding: 40px 32px; }
+  .cert-modal__title { font-size: 1.3rem; }
 }
 
-@media (min-width: 901px) and (max-width: 1200px) {
-  .cert-grid {
-    grid-template-columns: repeat(2, 1fr);
+/* =========================
+   MOBILE  (≤ 480px)
+========================= */
+
+@media (max-width: 480px) {
+  .cert-page { padding: 90px 4vw 100px; }
+
+  .cert-title  { font-size: 2rem; }
+  .cert-desc   { font-size: 0.88rem; margin-bottom: 32px; }
+
+  .cert-stats  { gap: 18px; flex-wrap: wrap; }
+  .cert-stat__value { font-size: 1.6rem; }
+  .cert-stat__label { font-size: 0.7rem; }
+
+  .cert-filters { gap: 8px; margin-bottom: 32px; }
+  .cert-filter-btn { padding: 7px 14px; font-size: 0.78rem; }
+
+  .cert-grid { grid-template-columns: 1fr; gap: 14px; }
+
+  .cert-card { padding: 24px 20px 30px; border-radius: 18px; }
+  .cert-card__title { font-size: 1rem; }
+  .cert-card__icon  { font-size: 1.7rem; }
+
+  .cert-modal {
+    padding: 28px 18px;
+    border-radius: 20px;
+    width: 96%;
   }
+  .cert-modal__title  { font-size: 1.15rem; }
+  .cert-modal__icon   { font-size: 2rem; }
+  .cert-modal__desc   { font-size: 0.88rem; }
+  .cert-modal__btn    { padding: 11px 24px; font-size: 0.85rem; }
 }

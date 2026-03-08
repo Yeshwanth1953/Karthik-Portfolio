@@ -44,6 +44,7 @@
 .hero-actions {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -198,9 +199,7 @@
   transition: opacity 0.4s ease;
 }
 
-.skill-card:hover .skill-card__glow {
-  opacity: 1;
-}
+.skill-card:hover .skill-card__glow { opacity: 1; }
 
 .skill-card__hint {
   position: absolute;
@@ -213,9 +212,7 @@
   transition: opacity 0.3s ease;
 }
 
-.skill-card:hover .skill-card__hint {
-  opacity: 0.7;
-}
+.skill-card:hover .skill-card__hint { opacity: 0.7; }
 
 .skill-card__icon {
   font-size: 2.4rem;
@@ -263,9 +260,7 @@
   border-radius: 0 0 0 28px;
 }
 
-.skill-card:hover .skill-card__bar {
-  width: 100%;
-}
+.skill-card:hover .skill-card__bar { width: 100%; }
 
 /* =========================
    SKILL MODAL
@@ -280,6 +275,7 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  padding: 20px;
 }
 
 .skill-modal {
@@ -386,23 +382,81 @@
 }
 
 /* =========================
-   MOBILE
+   TABLET  (481px – 900px)
 ========================= */
 
 @media (max-width: 900px) {
   .home-hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 100px 6vw 60px;
+    grid-template-columns: 1fr 320px;
+    padding: 110px 5vw 60px;
+    gap: 30px;
+    min-height: auto;
   }
 
+  .hero-title  { font-size: 2.8rem; }
+  .hero-desc   { font-size: 0.95rem; max-width: 100%; }
+
+  .image-box {
+    width: 280px;
+    height: 320px;
+  }
+
+  .skills-section { padding: 80px 5vw 100px; }
+  .skills-title   { font-size: 2.2rem; }
+  .skills-grid    { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+  .skill-card { padding: 28px 24px 36px; min-height: 240px; }
+  .skill-card__title { font-size: 1.3rem; }
+
+  .skill-modal { padding: 40px 32px; }
+  .skill-modal__title { font-size: 1.6rem; }
+}
+
+/* =========================
+   MOBILE  (≤ 480px)
+========================= */
+
+@media (max-width: 480px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 100px 5vw 50px;
+    min-height: auto;
+  }
+
+  .hero-left  { max-width: 100%; }
   .hero-right { display: none; }
 
-  .hero-actions { justify-content: center; }
+  .hero-title  { font-size: 2rem; }
+  .hero-desc   { font-size: 0.9rem; max-width: 100%; margin-bottom: 28px; }
 
-  .skills-section { padding: 80px 6vw 100px; }
+  .hero-actions {
+    justify-content: center;
+    gap: 12px;
+  }
 
-  .skills-grid { grid-template-columns: 1fr; }
+  .btn { padding: 11px 24px; font-size: 0.88rem; }
 
-  .skill-modal { padding: 36px 28px; }
+  .skills-section  { padding: 60px 5vw 80px; }
+  .skills-title    { font-size: 1.8rem; }
+  .skills-subtitle { font-size: 0.88rem; }
+  .skills-header   { margin-bottom: 40px; }
+  .skills-grid     { grid-template-columns: 1fr; gap: 14px; }
+
+  .skill-card {
+    padding: 28px 22px 34px;
+    min-height: auto;
+    border-radius: 20px;
+  }
+  .skill-card__title { font-size: 1.2rem; }
+  .skill-card__icon  { font-size: 1.9rem; }
+
+  .skill-modal {
+    padding: 28px 20px;
+    border-radius: 20px;
+    width: 95%;
+  }
+  .skill-modal__title { font-size: 1.3rem; }
+  .skill-modal__icon  { font-size: 1.9rem; }
+  .skill-modal__tag   { padding: 8px 14px; font-size: 0.8rem; }
 }
