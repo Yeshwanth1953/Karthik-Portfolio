@@ -116,20 +116,13 @@ npm run preview
 
 ## 🌐 Live Demo
 
-👉 (Add your Vercel link here)
-
-Example:
-https://your-portfolio.vercel.app
+👉 https://karthik-portfolio-xi.vercel.app/
 
 ---
 
 ## 📸 Screenshots
 
-(Add inside `/screenshots` folder)
-
-![Home](./screenshots/home.png)
-![Projects](./screenshots/projects.png)
-![Contact](./screenshots/contact.png)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f9fcb8cb-fafb-49ba-8c97-550cc0a3a84f" />
 
 ---
 
