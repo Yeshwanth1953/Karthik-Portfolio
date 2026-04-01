@@ -1,20 +1,167 @@
-<<<<<<< HEAD
-# React + Vite
+# 🚀 Portfolio Website – Yesh V3.0 (Major Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Overview
 
-Currently, two official plugins are available:
+Portfolio Yesh V3.0 is a modern personal portfolio web application built using **React and Vite**, designed to showcase my skills, projects, and achievements in a clean and interactive way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project focuses on creating a smooth user experience with responsive design, structured components, and visually appealing layouts.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Problem Statement
 
-## Expanding the ESLint configuration
+Traditional portfolio websites often lack:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Karthik-Portfolio
->>>>>>> 082f827eed56a0be2cf5b45b1998d5347eed09ea
+* Structured design
+* Interactivity
+* Scalability
+
+This project solves these issues by:
+
+* Using React for component-based architecture
+* Improving UI with structured layouts and styling
+* Creating a responsive and modern portfolio
+
+---
+
+## 🚀 Key Features
+
+### ⚛️ Core Functionality
+
+* Component-based architecture using React
+* Reusable and modular components
+* Organized project structure
+
+### 🎨 UI/UX
+
+* Clean and modern design
+* Responsive layout for all devices
+* Smooth navigation between sections
+
+### 📂 Portfolio Sections
+
+* 🏠 Hero section
+* 👨‍💻 About section
+* 📂 Projects showcase
+* 📜 Certifications
+* 🛠 Skills
+* 📄 Resume section
+* 📞 Contact section
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* HTML5
+* CSS3
+* JavaScript (ES6+)
+
+---
+
+## 📂 Project Structure
+
+Portfolio_Yesh_V3.0/
+
+│── src/
+│   ├── components/
+│   ├── sections/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+
+│── public/
+│── package.json
+│── vite.config.js
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+   git clone https://github.com/Yeshwanth1953/Portfolio_Yesh_V3.0.git
+
+2. Navigate to the project:
+   cd Portfolio_Yesh_V3.0
+
+3. Install dependencies:
+   npm install
+
+4. Run development server:
+   npm run dev
+
+---
+
+## ▶️ Usage
+
+* Start the development server
+* Open the provided localhost URL
+* Navigate through different sections
+* Explore projects and skills
+
+---
+
+## 🏗️ Build for Production
+
+npm run build
+
+Preview build:
+
+npm run preview
+
+---
+
+## 🌐 Live Demo
+
+👉 (Add your Vercel link here)
+
+Example:
+https://your-portfolio.vercel.app
+
+---
+
+## 📸 Screenshots
+
+(Add inside `/screenshots` folder)
+
+![Home](./screenshots/home.png)
+![Projects](./screenshots/projects.png)
+![Contact](./screenshots/contact.png)
+
+---
+
+## 🎨 UI/UX Highlights
+
+* Clean layout using CSS
+* Responsive design across devices
+* Structured sections for better readability
+* Smooth user experience
+
+---
+
+## 🔮 Future Improvements
+
+* ✨ Add advanced animations
+* 🌙 Dark/Light mode
+* 📊 Project filtering
+* 📧 Functional contact form (backend)
+* 🌐 Custom domain
+
+---
+
+## 👤 About Me
+
+**Yeshwanth Vutukuru**
+
+* 🔗 GitHub: https://github.com/Yeshwanth1953
+* 💼 LinkedIn: https://www.linkedin.com/in/yeshwanth-vutukuru/
+* 📧 Email: [yeshwanthvutukuru31@gmail.com](mailto:yeshwanthvutukuru31@gmail.com)
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
