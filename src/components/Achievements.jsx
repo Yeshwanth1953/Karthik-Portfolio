@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "../styles/achievements.css";
+import Certificates from "./Certificates";
 
 function RevealItem({ children, delay = 0 }) {
   const ref = useRef(null);
@@ -81,6 +82,13 @@ const achievements = [
     desc: "Completed Accenture's structured data visualization and client-focused analytics simulation, presenting findings in a professional consulting format.",
     year: "2024",
   },
+  {
+    icon: "🎖️",
+    tag: "Internship",
+    title: "Completion of Internship Certification",
+    desc: "Successfully completed internship programs and received certifications for my contributions and learning.",
+    year: "2025–2026",
+  }
 ];
 
 const tagColors = {
