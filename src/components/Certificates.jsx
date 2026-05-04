@@ -178,7 +178,7 @@ export default function Certificates() {
           transition={{ delay: 0.8 }}
         >
           {[
-            { value: "8+", label: "Certificates" },
+            { value: "12+", label: "Certificates" },
             { value: "3", label: "Hackathons" },
             { value: "2026", label: "Latest Year" },
           ].map((s, i) => (
