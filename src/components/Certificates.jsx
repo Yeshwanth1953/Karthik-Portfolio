@@ -70,7 +70,7 @@ const certificates = [
     category: "Design",
     icon: "🎨",
     desc: "Serving as core designer contributing to branding and digital assets for GAAC.",
-    file: "/Certificates/GAAC_Letter_of_Appreciation.pdf",
+    file: "/Certificates/GAAC_Letter_of_Apprecition.pdf",
   },
   {
     title: "SHORE 2025 Fest Committee",
