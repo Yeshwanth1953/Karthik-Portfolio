@@ -11,9 +11,9 @@ import "../styles/contact.css";
 //    TEMPLATE_ID → Your email template ID
 //    PUBLIC_KEY  → Your EmailJS public key
 // ============================================================
-const EMAILJS_SERVICE_ID  = "service_yqrtvlc";
-const EMAILJS_TEMPLATE_ID = "template_mpb905d";
-const EMAILJS_PUBLIC_KEY  = "KvyFtymBfgLA7Bsws";
+const EMAILJS_SERVICE_ID  = "service_leoi0da";
+const EMAILJS_TEMPLATE_ID = "template_mziye8g";
+const EMAILJS_PUBLIC_KEY  = "ycvrNHDvp8ZjVjfh2";
 
 // 🔧 Replace with Karthik's WhatsApp number (country code + number)
 const WHATSAPP_NUMBER = "919848861475";
