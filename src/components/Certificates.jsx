@@ -128,7 +128,7 @@ const certificates = [
   }
 ];
 
-const categories = ["All", "Analytics", "Hackathons", "Design"];
+const categories = ["All", "Analytics", "Hackathons", "Design", "Volunteer", "Course"];
 
 export default function Certificates() {
   const [activeCategory, setActiveCategory] = useState("All");
