@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "../styles/achievements.css";
-import Certificates from "./Certificates";
 
 function RevealItem({ children, delay = 0 }) {
   const ref = useRef(null);
@@ -88,26 +87,24 @@ const achievements = [
     title: "Completion of Internship Certification",
     desc: "Successfully completed internship programs and received certifications for my contributions and learning.",
     year: "2025–2026",
-  }
+  },
 ];
 
 const tagColors = {
-  Leadership: "#22c55e",
-  Experience: "#34d399",
-  Projects: "#4ade80",
+  Leadership:  "#22c55e",
+  Experience:  "#34d399",
+  Projects:    "#4ade80",
   Competition: "#f59e0b",
-  Hackathon: "#60a5fa",
-  Simulation: "#a78bfa",
+  Hackathon:   "#60a5fa",
+  Simulation:  "#a78bfa",
+  Internship:  "#fb923c",   // ✅ added missing color
 };
 
 export default function Achievements() {
   return (
     <section className="ach-page">
 
-      {/* Background texture */}
       <div className="ach-bg-grid" />
-
-      {/* Floating accent orbs */}
       <div className="ach-orb ach-orb--1" />
       <div className="ach-orb ach-orb--2" />
 
@@ -140,7 +137,6 @@ export default function Achievements() {
           Key milestones that reflect my growth across design, analytics, and competitive problem-solving.
         </motion.p>
 
-        {/* Count row */}
         <motion.div
           className="ach-counts"
           initial={{ opacity: 0, y: 20 }}
@@ -172,7 +168,7 @@ export default function Achievements() {
         transition={{ delay: 0.9, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       />
 
-      {/* ── ACHIEVEMENTS LIST ── */}
+      {/* ── LIST ── */}
       <div className="ach-list">
         {achievements.map((item, i) => (
           <RevealItem key={i} delay={i * 0.06}>
@@ -181,12 +177,10 @@ export default function Achievements() {
               whileHover={{ x: 6 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
             >
-              {/* Left — Number */}
               <div className="ach-item__number">
                 {String(i + 1).padStart(2, "0")}
               </div>
 
-              {/* Center — Content */}
               <div className="ach-item__body">
                 <div className="ach-item__meta">
                   <span
@@ -201,10 +195,7 @@ export default function Achievements() {
                 <p className="ach-item__desc">{item.desc}</p>
               </div>
 
-              {/* Right — Arrow */}
               <div className="ach-item__arrow">→</div>
-
-              {/* Hover line */}
               <div className="ach-item__line" />
             </motion.div>
           </RevealItem>
