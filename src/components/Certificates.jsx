@@ -12,6 +12,7 @@ function RevealSection({ children, delay = 0 }) {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.75, delay, ease: [0.16, 1, 0.3, 1] }}
     >
+      
       {children}
     </motion.div>
   );
